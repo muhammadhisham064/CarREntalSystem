@@ -1,66 +1,4 @@
-1. Exception Handling:
-Explanation:
-
-What: Exception handling is a way to manage and respond to unexpected errors or issues that can occur during the execution of a program.
-How: It involves using try-catch blocks to identify and handle potential errors without crashing the entire program.
-Example:
-java
-Copy code
-try {
-    // Code that might cause an exception
-    int result = 10 / 0;  // Division by zero
-} catch (ArithmeticException e) {
-    // Handle the exception
-    System.out.println("Error: " + e.getMessage());
-}
-2. Association (Composition, Aggregation):
-- Composition:
-Explanation:
-
-What: Composition is a strong association where one class contains the other class, and the contained class cannot exist independently.
-Example:
-java
-Copy code
-class Engine {
-    // Engine properties and methods
-}
-
-class Car {
-    private Engine engine;  // Composition
-}
-- Aggregation:
-Explanation:
-
-What: Aggregation is a weaker association where one class is associated with another class, but the associated class can exist independently.
-Example:
-java
-Copy code
-class Department {
-    // Department properties and methods
-}
-
-class University {
-    private List<Department> departments;  // Aggregation
-}
-3. Relationship Between Objects:
-Explanation:
-
-What: Relationship between objects defines how objects interact or collaborate in a program.
-Types:
-Association: Describes a connection between classes (can be composition or aggregation).
-Dependency: One class depends on another class, but there's no ownership or direct connection.
-Inheritance: Represents an "is-a" relationship between classes (e.g., a Cat is an Animal).
-Example:
-
-java
-Copy code
-class Teacher {
-    // Teacher properties and methods
-}
-
-class Student {
-    // Student properties and methods
-}package practice;
+package practice;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -393,10 +331,3 @@ class CarRentalSystem {
         return customers;
     }
 }
-
-
-class Classroom {
-    private Teacher teacher;  // Association
-    private List<Student> students;  // Association
-}
-These concepts are fundamental to understanding and designing object-oriented programs, allowing for effective error handling, managing relationships between objects, and structuring classes in a way that reflects their connections and dependencies.
